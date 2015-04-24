@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MAHOGANY_BD" Class="DBMahoganyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ROYRAN\ROYRAN_BDS;Initial Catalog=MAHOGANY_BD;User ID=sa" SettingsObjectName="MahoganyASP.BO.Properties.Settings" SettingsPropertyName="MAHOGANY_BDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbCanton" Member="tbCanton">
+    <Type Name="tbCanton">
+      <Column Name="idCanton" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="idProvincia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbCanton_tbDistrito" Member="tbDistrito" ThisKey="idCanton" OtherKey="idCanton" Type="tbDistrito" />
+      <Association Name="tbProvincia_tbCanton" Member="tbProvincia" ThisKey="idProvincia" OtherKey="idProvincia" Type="tbProvincia" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbUsuarios" Member="tbUsuarios">
+    <Type Name="tbUsuarios">
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombreCompleto" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="correoElectronico" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="telefono1" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="telefono2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="contrasena" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="tipoUsuario" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Association Name="tbUsuarios_tbCarrito" Member="tbCarrito" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbCarrito" />
+      <Association Name="tbUsuarios_tbDirecciones" Member="tbDirecciones" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbDirecciones" />
+      <Association Name="tbUsuarios_tbListaDeseos" Member="tbListaDeseos" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbListaDeseos" />
+      <Association Name="tbUsuarios_tbMetodoPagoUsuario" Member="tbMetodoPagoUsuario" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbMetodoPagoUsuario" />
+      <Association Name="tbUsuarios_tbOrdenes" Member="tbOrdenes" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbOrdenes" />
+      <Association Name="tbUsuarios_tbProductos" Member="tbProductos" ThisKey="idUsuario" OtherKey="vendidoPor" Type="tbProductos" />
+      <Association Name="tbUsuarios_tbProductos1" Member="tbProductos1" ThisKey="idUsuario" OtherKey="modificadoPor" Type="tbProductos" />
+      <Association Name="tbUsuarios_tbReviews" Member="tbReviews" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbReviews" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbCarrito" Member="tbCarrito">
+    <Type Name="tbCarrito">
+      <Column Name="idCarrito" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CantidadTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbCarrito_tbProductosCarrito" Member="tbProductosCarrito" ThisKey="idCarrito" OtherKey="idCarrito" Type="tbProductosCarrito" />
+      <Association Name="tbUsuarios_tbCarrito" Member="tbUsuarios" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbCategorias" Member="tbCategorias">
+    <Type Name="tbCategorias">
+      <Column Name="idCategoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="tbCategorias_tbSubCategorias" Member="tbSubCategorias" ThisKey="idCategoria" OtherKey="idCategoria" Type="tbSubCategorias" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbDetalleOrden" Member="tbDetalleOrden">
+    <Type Name="tbDetalleOrden">
+      <Column Name="idDetalleOrden" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="total" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="idProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idOrden" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbOrdenes_tbDetalleOrden" Member="tbOrdenes" ThisKey="idOrden" OtherKey="idOrden" Type="tbOrdenes" IsForeignKey="true" />
+      <Association Name="tbProductos_tbDetalleOrden" Member="tbProductos" ThisKey="idProducto" OtherKey="idProducto" Type="tbProductos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbDirecciones" Member="tbDirecciones">
+    <Type Name="tbDirecciones">
+      <Column Name="idDireccion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="direccionExacta" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="otrasSenas" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="notasAdicionales" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idDistrtito" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbDirecciones_tbOrdenes" Member="tbOrdenes" ThisKey="idDireccion" OtherKey="idDireccionFacturacion" Type="tbOrdenes" />
+      <Association Name="tbDirecciones_tbOrdenes1" Member="tbOrdenes1" ThisKey="idDireccion" OtherKey="idDireccionEntrega" Type="tbOrdenes" />
+      <Association Name="tbUsuarios_tbDirecciones" Member="tbUsuarios" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+      <Association Name="tbDistrito_tbDirecciones" Member="tbDistrito" ThisKey="idDistrtito" OtherKey="idDistrtito" Type="tbDistrito" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbDistrito" Member="tbDistrito">
+    <Type Name="tbDistrito">
+      <Column Name="idDistrtito" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="idCanton" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbDistrito_tbDirecciones" Member="tbDirecciones" ThisKey="idDistrtito" OtherKey="idDistrtito" Type="tbDirecciones" />
+      <Association Name="tbCanton_tbDistrito" Member="tbCanton" ThisKey="idCanton" OtherKey="idCanton" Type="tbCanton" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbListaDeseos" Member="tbListaDeseos">
+    <Type Name="tbListaDeseos">
+      <Column Name="idListaDeseos" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CantidadTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbListaDeseos_tbProductosListaDeseos" Member="tbProductosListaDeseos" ThisKey="idListaDeseos" OtherKey="idListaDeseos" Type="tbProductosListaDeseos" />
+      <Association Name="tbUsuarios_tbListaDeseos" Member="tbUsuarios" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbMetodoPagoUsuario" Member="tbMetodoPagoUsuario">
+    <Type Name="tbMetodoPagoUsuario">
+      <Column Name="idMetodoPagoUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="numeroTarjeta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaVencimiento" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="codigoValidacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idMetodoPago" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbMetodoPagoUsuario_tbOrdenes" Member="tbOrdenes" ThisKey="idMetodoPagoUsuario" OtherKey="idMetodoPagoUsuario" Type="tbOrdenes" />
+      <Association Name="tbUsuarios_tbMetodoPagoUsuario" Member="tbUsuarios" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+      <Association Name="tbMetodosPago_tbMetodoPagoUsuario" Member="tbMetodosPago" ThisKey="idMetodoPago" OtherKey="idMetodoPago" Type="tbMetodosPago" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbMetodosPago" Member="tbMetodosPago">
+    <Type Name="tbMetodosPago">
+      <Column Name="idMetodoPago" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="tbMetodosPago_tbMetodoPagoUsuario" Member="tbMetodoPagoUsuario" ThisKey="idMetodoPago" OtherKey="idMetodoPago" Type="tbMetodoPagoUsuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbOrdenes" Member="tbOrdenes">
+    <Type Name="tbOrdenes">
+      <Column Name="idOrden" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fecha" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="totalPagar" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="subTotal" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="idMetodoPagoUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idDireccionFacturacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idDireccionEntrega" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbOrdenes_tbDetalleOrden" Member="tbDetalleOrden" ThisKey="idOrden" OtherKey="idOrden" Type="tbDetalleOrden" />
+      <Association Name="tbMetodoPagoUsuario_tbOrdenes" Member="tbMetodoPagoUsuario" ThisKey="idMetodoPagoUsuario" OtherKey="idMetodoPagoUsuario" Type="tbMetodoPagoUsuario" IsForeignKey="true" />
+      <Association Name="tbDirecciones_tbOrdenes" Member="tbDirecciones" ThisKey="idDireccionFacturacion" OtherKey="idDireccion" Type="tbDirecciones" IsForeignKey="true" />
+      <Association Name="tbDirecciones_tbOrdenes1" Member="tbDirecciones1" ThisKey="idDireccionEntrega" OtherKey="idDireccion" Type="tbDirecciones" IsForeignKey="true" />
+      <Association Name="tbUsuarios_tbOrdenes" Member="tbUsuarios" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbProductos" Member="tbProductos">
+    <Type Name="tbProductos">
+      <Column Name="idProducto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="precio" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="precioEnvio" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="descuento" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="cantidadDisponible" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="peso" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="ancho" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="alto" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="largo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="pesoEnvio" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="condiciones" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="promedioReviews" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="idSubCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vendidoPor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="modificadoPor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="imagen1" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="imagen2" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="imagen3" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="imagen4" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="tbProductos_tbDetalleOrden" Member="tbDetalleOrden" ThisKey="idProducto" OtherKey="idProducto" Type="tbDetalleOrden" />
+      <Association Name="tbProductos_tbProductosCarrito" Member="tbProductosCarrito" ThisKey="idProducto" OtherKey="idProducto" Type="tbProductosCarrito" />
+      <Association Name="tbProductos_tbProductosListaDeseos" Member="tbProductosListaDeseos" ThisKey="idProducto" OtherKey="idProducto" Type="tbProductosListaDeseos" />
+      <Association Name="tbProductos_tbReviews" Member="tbReviews" ThisKey="idProducto" OtherKey="idProducto" Type="tbReviews" />
+      <Association Name="tbUsuarios_tbProductos" Member="tbUsuarios" ThisKey="vendidoPor" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+      <Association Name="tbUsuarios_tbProductos1" Member="tbUsuarios1" ThisKey="modificadoPor" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+      <Association Name="tbSubCategorias_tbProductos" Member="tbSubCategorias" ThisKey="idSubCategoria" OtherKey="idSubCategoria" Type="tbSubCategorias" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbProductosCarrito" Member="tbProductosCarrito">
+    <Type Name="tbProductosCarrito">
+      <Column Name="idProductoCarrito" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idCarrito" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbProductos_tbProductosCarrito" Member="tbProductos" ThisKey="idProducto" OtherKey="idProducto" Type="tbProductos" IsForeignKey="true" />
+      <Association Name="tbCarrito_tbProductosCarrito" Member="tbCarrito" ThisKey="idCarrito" OtherKey="idCarrito" Type="tbCarrito" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbProductosListaDeseos" Member="tbProductosListaDeseos">
+    <Type Name="tbProductosListaDeseos">
+      <Column Name="idProductoListaDeseos" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idListaDeseos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbProductos_tbProductosListaDeseos" Member="tbProductos" ThisKey="idProducto" OtherKey="idProducto" Type="tbProductos" IsForeignKey="true" />
+      <Association Name="tbListaDeseos_tbProductosListaDeseos" Member="tbListaDeseos" ThisKey="idListaDeseos" OtherKey="idListaDeseos" Type="tbListaDeseos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbProvincia" Member="tbProvincia">
+    <Type Name="tbProvincia">
+      <Column Name="idProvincia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="tbProvincia_tbCanton" Member="tbCanton" ThisKey="idProvincia" OtherKey="idProvincia" Type="tbCanton" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbReviews" Member="tbReviews">
+    <Type Name="tbReviews">
+      <Column Name="idReview" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="calificacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbUsuarios_tbReviews" Member="tbUsuarios" ThisKey="idUsuario" OtherKey="idUsuario" Type="tbUsuarios" IsForeignKey="true" />
+      <Association Name="tbProductos_tbReviews" Member="tbProductos" ThisKey="idProducto" OtherKey="idProducto" Type="tbProductos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbSubCategorias" Member="tbSubCategorias">
+    <Type Name="tbSubCategorias">
+      <Column Name="idSubCategoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="idCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbSubCategorias_tbProductos" Member="tbProductos" ThisKey="idSubCategoria" OtherKey="idSubCategoria" Type="tbProductos" />
+      <Association Name="tbCategorias_tbSubCategorias" Member="tbCategorias" ThisKey="idCategoria" OtherKey="idCategoria" Type="tbCategorias" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.25, 20.5" name="DBMahogany">
+  <DataContextMoniker Name="/DBMahoganyDataContext" />
+  <nestedChildShapes>
+    <classShape Id="58facc64-cc08-4108-9102-5d2c7d3f4b2b" absoluteBounds="1.5, 15.625, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbCanton" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f67c01a6-2670-4c3c-a5bf-58b0d304dc5d" absoluteBounds="1.5150000000000001, 16.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" absoluteBounds="0.75, 8.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbUsuarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0171da22-b7dd-4a97-a990-e9effa9910e9" absoluteBounds="0.765, 8.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f65aa5c4-a779-4c54-8208-d423e6c7231a" absoluteBounds="3.5, 7.75, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbCarrito" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0bc78e22-3540-46b9-ae16-8daff334a871" absoluteBounds="3.515, 8.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27f86b50-5c2b-49e0-9a63-2a9ee3dd005d" absoluteBounds="1, 1.875, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbCategorias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e2d1972c-7220-43b4-bae0-a6287632207f" absoluteBounds="1.0150000000000001, 2.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f17606de-1b11-46f1-82dc-fb16239c6d1a" absoluteBounds="12, 5.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbDetalleOrden" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fce50f93-e5f9-40e5-97fa-263977594908" absoluteBounds="12.015, 5.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d77cc3b-76ed-41be-b91a-4c15bc11cb9f" absoluteBounds="3.5, 4.625, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbDirecciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b70d3f26-42db-489d-aa6e-d128e793ae9d" absoluteBounds="3.515, 5.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4aa4ff10-ba88-49c5-895c-56a6d042dfcd" absoluteBounds="0.75, 4.625, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbDistrito" />
+      <nestedChildShapes>
+        <elementListCompartment Id="950566e3-27e0-4caf-b3f3-740da3dace23" absoluteBounds="0.765, 5.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86424c9b-70b7-4b5f-b140-459f6c662555" absoluteBounds="3.5, 10, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbListaDeseos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe67da34-e79a-40f6-98d1-6d4c2f667bf6" absoluteBounds="3.515, 10.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3fc53ca-a805-46c1-8237-08edc1d1aba2" absoluteBounds="3.5, 12.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbMetodoPagoUsuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41b43308-71f1-49ae-bcc3-980c7709b6a3" absoluteBounds="3.515, 12.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e43b3500-29a9-491d-bade-b148e0f66073" absoluteBounds="0.75, 12.875, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbMetodosPago" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e2be6501-4c92-4d76-bdd8-455f40472d0d" absoluteBounds="0.765, 13.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5ad0d13-b494-4ac9-b902-bdacfb6f8786" absoluteBounds="9.25, 8.375, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbOrdenes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ded5e0fe-7de3-4b38-99cf-f1efcfacfc9d" absoluteBounds="9.265, 8.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" absoluteBounds="6.5, 1, 2, 5.0400211588541666">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbProductos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="268770c3-8f66-4661-8d65-8f30f98d8241" absoluteBounds="6.515, 1.46, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c91dda5d-9396-430d-a4a6-251973bd4a1f" absoluteBounds="6.25, 7.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbProductosCarrito" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c25d4df-3451-4103-aaa2-886d368b6668" absoluteBounds="6.265, 8.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15ad7c2b-231d-47dd-aec4-f8ff7e893aa9" absoluteBounds="6.25, 10.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbProductosListaDeseos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f9ebc9e-b1fb-4637-aa0a-4b42de5b2dca" absoluteBounds="6.265, 11.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc29c767-4bfe-42c3-b81d-46d0e136e193" absoluteBounds="1.75, 18.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbProvincia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecce8609-9186-40c2-ab00-c8388fddee24" absoluteBounds="1.7650000000000001, 19.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8e855cf-0424-40ee-b50d-589c59581cfa" absoluteBounds="9.25, 4.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbReviews" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb679d1d-c3d4-4d08-94de-af6613cf813a" absoluteBounds="9.265, 5.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd82269f-225d-446b-a847-7dd331481e10" absoluteBounds="3.75, 1.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBMahoganyDataContext/tbSubCategorias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bff8bac2-bf66-4036-95d8-f122cec38a2b" absoluteBounds="3.765, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 8.81814697265625); (3.19791666666667 : 8.81814697265625 : JumpStart); (3.36458333333333 : 8.81814697265625 : JumpEnd); (3.5 : 8.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbCarrito" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="f65aa5c4-a779-4c54-8208-d423e6c7231a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.53076823076923); (3.1875 : 8.09326823076923); (3.1875 : 5.60659912109375); (3.5 : 5.60659912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbDirecciones" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="9d77cc3b-76ed-41be-b91a-4c15bc11cb9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.05329956054688); (3.5 : 5.05329956054688)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbDistrito/tbDistrito_tbDirecciones" />
+      <nodes>
+        <classShapeMoniker Id="4aa4ff10-ba88-49c5-895c-56a6d042dfcd" />
+        <classShapeMoniker Id="9d77cc3b-76ed-41be-b91a-4c15bc11cb9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.28125 : 15.625); (3.28125 : 6.03250046549479); (3.27083333333333 : 6.03250046549479 : JumpStart); (3.10416666666667 : 6.03250046549479 : JumpEnd); (2.75 : 6.03250046549479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbCanton/tbCanton_tbDistrito" />
+      <nodes>
+        <classShapeMoniker Id="58facc64-cc08-4108-9102-5d2c7d3f4b2b" />
+        <classShapeMoniker Id="4aa4ff10-ba88-49c5-895c-56a6d042dfcd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.3277498372396); (3.19791666666667 : 10.3277498372396 : JumpStart); (3.36458333333333 : 10.3277498372396 : JumpEnd); (3.5 : 10.3277498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbListaDeseos" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="86424c9b-70b7-4b5f-b140-459f6c662555" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.6554996744792); (3.125 : 11.0304996744792); (3.125 : 13.5777498372396); (3.19791666666667 : 13.5777498372396 : JumpStart); (3.36458333333333 : 13.5777498372396 : JumpEnd); (3.5 : 13.5777498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbMetodoPagoUsuario" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="b3fc53ca-a805-46c1-8237-08edc1d1aba2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.1638749186198); (3.04166666666667 : 13.1638749186198 : JumpStart); (3.36458333333333 : 13.1638749186198 : JumpEnd); (3.5 : 13.1638749186198)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbMetodosPago/tbMetodosPago_tbMetodoPagoUsuario" />
+      <nodes>
+        <classShapeMoniker Id="e43b3500-29a9-491d-bade-b148e0f66073" />
+        <classShapeMoniker Id="b3fc53ca-a805-46c1-8237-08edc1d1aba2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 9.64505126953125); (13 : 9.64505126953125); (13 : 6.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbOrdenes/tbOrdenes_tbDetalleOrden" />
+      <nodes>
+        <classShapeMoniker Id="b5ad0d13-b494-4ac9-b902-bdacfb6f8786" />
+        <classShapeMoniker Id="f17606de-1b11-46f1-82dc-fb16239c6d1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.5777498372396); (10.25 : 13.5777498372396); (10.25 : 10.9151025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbMetodoPagoUsuario/tbMetodoPagoUsuario_tbOrdenes" />
+      <nodes>
+        <classShapeMoniker Id="b3fc53ca-a805-46c1-8237-08edc1d1aba2" />
+        <classShapeMoniker Id="b5ad0d13-b494-4ac9-b902-bdacfb6f8786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.4682867976262 : 6.5881982421875); (5.875 : 6.9949114445613); (5.875 : 10.1017976888021); (8.79166666666667 : 10.1017976888021 : JumpStart); (8.95833333333333 : 10.1017976888021 : JumpEnd); (9.25 : 10.1017976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbDirecciones/tbDirecciones_tbOrdenes" />
+      <nodes>
+        <classShapeMoniker Id="9d77cc3b-76ed-41be-b91a-4c15bc11cb9f" />
+        <classShapeMoniker Id="b5ad0d13-b494-4ac9-b902-bdacfb6f8786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.49305763506611); (6.0625 : 7.05555763506611); (6.0625 : 10.1017976888021); (8.79166666666667 : 10.1017976888021 : JumpStart); (8.95833333333333 : 10.1017976888021 : JumpEnd); (9.25 : 10.1017976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbDirecciones/tbDirecciones_tbOrdenes1" />
+      <nodes>
+        <classShapeMoniker Id="9d77cc3b-76ed-41be-b91a-4c15bc11cb9f" />
+        <classShapeMoniker Id="b5ad0d13-b494-4ac9-b902-bdacfb6f8786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.66429768880208); (3.19791666666667 : 9.66429768880208 : JumpStart); (3.36458333333333 : 9.66429768880208 : JumpEnd); (5.79166666666667 : 9.66429768880208 : JumpStart); (5.95833333333333 : 9.66429768880208 : JumpEnd); (5.97916666666667 : 9.66429768880208 : JumpStart); (6.14583333333333 : 9.66429768880208 : JumpEnd); (8.29166416666667 : 9.66429768880208 : JumpStart); (8.45833083333333 : 9.66429768880208 : JumpEnd); (8.79166666666667 : 9.66429768880208 : JumpStart); (8.95833333333333 : 9.66429768880208 : JumpEnd); (9.25 : 9.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbOrdenes" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="b5ad0d13-b494-4ac9-b902-bdacfb6f8786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 2.90625); (13 : 2.90625); (13 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbProductos/tbProductos_tbDetalleOrden" />
+      <nodes>
+        <classShapeMoniker Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" />
+        <classShapeMoniker Id="f17606de-1b11-46f1-82dc-fb16239c6d1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.49644403320313); (3.19791666666667 : 9.49644403320313 : JumpStart); (3.36458333333333 : 9.49644403320313 : JumpEnd); (5.79166666666667 : 9.49644403320313 : JumpStart); (5.95833333333333 : 9.49644403320313 : JumpEnd); (5.97916666666667 : 9.49644403320313 : JumpStart); (6.14583333333333 : 9.49644403320313 : JumpEnd); (8.40625 : 9.49644403320313); (8.40625 : 6.04002115885417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbProductos" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.83215134440104); (3.19791666666667 : 9.83215134440104 : JumpStart); (3.36458333333333 : 9.83215134440104 : JumpEnd); (5.79166666666667 : 9.83215134440104 : JumpStart); (5.95833333333333 : 9.83215134440104 : JumpEnd); (5.97916666666667 : 9.83215134440104 : JumpStart); (6.14583333333333 : 9.83215134440104 : JumpEnd); (8.3749975 : 9.83215134440104); (8.3749975 : 6.04002115885417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbProductos1" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.375 : 6.04002115885417); (7.375 : 7.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbProductos/tbProductos_tbProductosCarrito" />
+      <nodes>
+        <classShapeMoniker Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" />
+        <classShapeMoniker Id="c91dda5d-9396-430d-a4a6-251973bd4a1f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.44314697265625); (5.79166666666667 : 8.44314697265625 : JumpStart); (5.95833333333333 : 8.44314697265625 : JumpEnd); (5.97916666666667 : 8.44314697265625 : JumpStart); (6.14583333333333 : 8.44314697265625 : JumpEnd); (6.25 : 8.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbCarrito/tbCarrito_tbProductosCarrito" />
+      <nodes>
+        <classShapeMoniker Id="f65aa5c4-a779-4c54-8208-d423e6c7231a" />
+        <classShapeMoniker Id="c91dda5d-9396-430d-a4a6-251973bd4a1f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 6.04002115885417); (8.875 : 6.41502115885417); (8.875 : 10.5); (8.625 : 10.5); (8.25 : 10.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbProductos/tbProductos_tbProductosListaDeseos" />
+      <nodes>
+        <classShapeMoniker Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" />
+        <classShapeMoniker Id="15ad7c2b-231d-47dd-aec4-f8ff7e893aa9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.1306469726562); (6.25 : 11.1306469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbListaDeseos/tbListaDeseos_tbProductosListaDeseos" />
+      <nodes>
+        <classShapeMoniker Id="86424c9b-70b7-4b5f-b140-459f6c662555" />
+        <classShapeMoniker Id="15ad7c2b-231d-47dd-aec4-f8ff7e893aa9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 18.875); (2.625 : 17.3958968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbProvincia/tbProvincia_tbCanton" />
+      <nodes>
+        <classShapeMoniker Id="dc29c767-4bfe-42c3-b81d-46d0e136e193" />
+        <classShapeMoniker Id="58facc64-cc08-4108-9102-5d2c7d3f4b2b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.53538361538462); (3.125 : 8.16038361538462); (3.125 : 7.2131982421875); (3.19791666666667 : 7.2131982421875 : JumpStart); (3.36458333333333 : 7.2131982421875 : JumpEnd); (5.79166666666667 : 7.2131982421875 : JumpStart); (5.95833333333333 : 7.2131982421875 : JumpEnd); (5.97916666666667 : 7.2131982421875 : JumpStart); (6.14583333333333 : 7.2131982421875 : JumpEnd); (7.29166666666667 : 7.2131982421875 : JumpStart); (7.45833333333333 : 7.2131982421875 : JumpEnd); (8.29166416666667 : 7.2131982421875 : JumpStart); (8.48958333333333 : 7.2131982421875 : JumpEnd); (8.875 : 7.2131982421875); (9.25 : 6.8381982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbUsuarios/tbUsuarios_tbReviews" />
+      <nodes>
+        <classShapeMoniker Id="d19eba3b-9d4c-4c5d-b7b0-6ecd52dad91f" />
+        <classShapeMoniker Id="d8e855cf-0424-40ee-b50d-589c59581cfa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 5.42625807942708); (9.25 : 5.42625807942708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbProductos/tbProductos_tbReviews" />
+      <nodes>
+        <classShapeMoniker Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" />
+        <classShapeMoniker Id="d8e855cf-0424-40ee-b50d-589c59581cfa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 2.53929768880208); (6.5 : 2.53929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbSubCategorias/tbSubCategorias_tbProductos" />
+      <nodes>
+        <classShapeMoniker Id="fd82269f-225d-446b-a847-7dd331481e10" />
+        <classShapeMoniker Id="5275885e-beb8-400e-a92b-d5c1b65e9dfc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 2.56814697265625); (3.75 : 2.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBMahoganyDataContext/tbCategorias/tbCategorias_tbSubCategorias" />
+      <nodes>
+        <classShapeMoniker Id="27f86b50-5c2b-49e0-9a63-2a9ee3dd005d" />
+        <classShapeMoniker Id="fd82269f-225d-446b-a847-7dd331481e10" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

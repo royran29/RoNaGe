@@ -1,0 +1,12 @@
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\ProyectoFinal\trunk\MahoganyASP\MahoganyASP.BO\bin\Debug\MahoganyASP.BO.dll
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\ProyectoFinal\trunk\MahoganyASP\MahoganyASP.BO\bin\Debug\MahoganyASP.BO.pdb
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\ProyectoFinal\trunk\MahoganyASP\MahoganyASP.BO\obj\Debug\MahoganyASP.BO.csprojResolveAssemblyReference.cache
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\ProyectoFinal\trunk\MahoganyASP\MahoganyASP.BO\obj\Debug\MahoganyASP.BO.dll
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\ProyectoFinal\trunk\MahoganyASP\MahoganyASP.BO\obj\Debug\MahoganyASP.BO.pdb
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\ProyectoFinal\trunk\MahoganyASP\MahoganyASP.BO\bin\Debug\MahoganyASP.BO.dll.config
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\mahogany\MahoganyASP.BO\bin\Debug\MahoganyASP.BO.dll.config
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\mahogany\MahoganyASP.BO\bin\Debug\MahoganyASP.BO.dll
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\mahogany\MahoganyASP.BO\bin\Debug\MahoganyASP.BO.pdb
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\mahogany\MahoganyASP.BO\obj\Debug\MahoganyASP.BO.csprojResolveAssemblyReference.cache
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\mahogany\MahoganyASP.BO\obj\Debug\MahoganyASP.BO.dll
+F:\Users\Royranpc\Documents\Universidad\2015\ICiclo\Progra 4\Proyecto\mahogany\MahoganyASP.BO\obj\Debug\MahoganyASP.BO.pdb
